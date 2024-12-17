@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-12-17">
+
+<title>Ejercicios para exponer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="practica7_files/libs/clipboard/clipboard.min.js"></script>
+<script src="practica7_files/libs/quarto-html/quarto.js"></script>
+<script src="practica7_files/libs/quarto-html/popper.min.js"></script>
+<script src="practica7_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="practica7_files/libs/quarto-html/anchor.min.js"></script>
+<link href="practica7_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="practica7_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="practica7_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="practica7_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="practica7_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#problema-1" id="toc-problema-1" class="nav-link active" data-scroll-target="#problema-1">Problema 1</a>
+  <ul class="collapse">
+  <li><a href="#apartado-a" id="toc-apartado-a" class="nav-link" data-scroll-target="#apartado-a">Apartado a</a></li>
+  <li><a href="#apartado-b" id="toc-apartado-b" class="nav-link" data-scroll-target="#apartado-b">Apartado b</a></li>
+  </ul></li>
+  <li><a href="#problema-2" id="toc-problema-2" class="nav-link" data-scroll-target="#problema-2">Problema 2</a></li>
+  <li><a href="#problema-3" id="toc-problema-3" class="nav-link" data-scroll-target="#problema-3">Problema 3</a></li>
+  <li><a href="#problema-4" id="toc-problema-4" class="nav-link" data-scroll-target="#problema-4">Problema 4</a></li>
+  <li><a href="#problema-5" id="toc-problema-5" class="nav-link" data-scroll-target="#problema-5">Problema 5</a></li>
+  <li><a href="#problema-6" id="toc-problema-6" class="nav-link" data-scroll-target="#problema-6">Problema 6</a></li>
+  <li><a href="#problema-7" id="toc-problema-7" class="nav-link" data-scroll-target="#problema-7">Problema 7</a>
+  <ul class="collapse">
+  <li><a href="#dividid-la-serie-temporal-en-dos-trozos-un-80-de-las-primeras-observaciones-las-usaréis-para-aprender-y-dejaréis-el-20-restante-para-predecir." id="toc-dividid-la-serie-temporal-en-dos-trozos-un-80-de-las-primeras-observaciones-las-usaréis-para-aprender-y-dejaréis-el-20-restante-para-predecir." class="nav-link" data-scroll-target="#dividid-la-serie-temporal-en-dos-trozos-un-80-de-las-primeras-observaciones-las-usaréis-para-aprender-y-dejaréis-el-20-restante-para-predecir.">7.1 Dividid la serie temporal en dos trozos: un 80% de las primeras observaciones las usaréis para “aprender” y dejaréis el 20% restante para “predecir”.</a></li>
+  <li><a href="#describid-la-serie-temporal-de-aprendizaje-gráfico-de-la-serie-original-detección-de-la-tendencia-análisis-de-la-variabilidad-y-estacionalidad-en-el-caso-que-aplique." id="toc-describid-la-serie-temporal-de-aprendizaje-gráfico-de-la-serie-original-detección-de-la-tendencia-análisis-de-la-variabilidad-y-estacionalidad-en-el-caso-que-aplique." class="nav-link" data-scroll-target="#describid-la-serie-temporal-de-aprendizaje-gráfico-de-la-serie-original-detección-de-la-tendencia-análisis-de-la-variabilidad-y-estacionalidad-en-el-caso-que-aplique.">7.2 Describid la serie temporal de aprendizaje: gráfico de la serie original, detección de la tendencia, análisis de la variabilidad y estacionalidad (en el caso que aplique).</a></li>
+  <li><a href="#ajustad-un-modelo-arima-a-la-serie-temporal-para-aprender-justificad-detalladamente-la-selección-de-los-parámetros-del-modelo.-visualizad-el-ajuste-del-modelo." id="toc-ajustad-un-modelo-arima-a-la-serie-temporal-para-aprender-justificad-detalladamente-la-selección-de-los-parámetros-del-modelo.-visualizad-el-ajuste-del-modelo." class="nav-link" data-scroll-target="#ajustad-un-modelo-arima-a-la-serie-temporal-para-aprender-justificad-detalladamente-la-selección-de-los-parámetros-del-modelo.-visualizad-el-ajuste-del-modelo.">7.3 Ajustad un modelo ARIMA a la serie temporal para “aprender”, justificad detalladamente la selección de los parámetros del modelo. Visualizad el ajuste del modelo.</a></li>
+  <li><a href="#utilizad-el-modelo-del-apartado-anterior-para-realizar-predicciones-sobre-la-serie" id="toc-utilizad-el-modelo-del-apartado-anterior-para-realizar-predicciones-sobre-la-serie" class="nav-link" data-scroll-target="#utilizad-el-modelo-del-apartado-anterior-para-realizar-predicciones-sobre-la-serie">7.4 Utilizad el modelo del apartado anterior para realizar predicciones sobre la serie</a></li>
+  <li><a href="#escribid-una-conclusión-general-de-vuestro-análisis-tanto-a-nivel-técnico-como-en" id="toc-escribid-una-conclusión-general-de-vuestro-análisis-tanto-a-nivel-técnico-como-en" class="nav-link" data-scroll-target="#escribid-una-conclusión-general-de-vuestro-análisis-tanto-a-nivel-técnico-como-en">7.5 Escribid una conclusión general de vuestro análisis tanto a nivel técnico como en</a></li>
+  </ul></li>
+  <li><a href="#problema-8" id="toc-problema-8" class="nav-link" data-scroll-target="#problema-8">Problema 8</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ejercicios para exponer</h1>
+<p class="subtitle lead">20582- Análisis de Datos para el GMAT</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 17, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="problema-1" class="level2">
+<h2 class="anchored" data-anchor-id="problema-1">Problema 1</h2>
+<p>En el siguiente <a href="https://github.com/igmuib/Practica_AD/blob/main/problema1_ACP.csv">enlace</a> encontraréis datos de España correspondientes al año 2021, organizados en 7 variables: 4 relacionadas con el uso de las tecnologías de la información y la comunicación (TIC) en las empresas, y 3 vinculadas al uso de estas tecnologías por la población y al equipamiento tecnológico de los hogares. Las variables son las siguientes:</p>
+<p><code>ebroad</code>: porcentaje de empresas con acceso a Internet de banda ancha (broadband).</p>
+<p><code>esales</code>: porcentaje de empresas que realizan ventas electrónicas.</p>
+<p><code>esocmedia</code>: porcentaje de empresas que utilizan redes sociales.</p>
+<p><code>eweb</code>: porcentaje de empresas con sitio web.</p>
+<p><code>hbroad</code>: porcentaje de hogares con acceso a Internet de banda ancha.</p>
+<p><code>hiacc</code>: porcentaje de hogares con acceso general a Internet, independientemente del tipo de conexión.</p>
+<p><code>iuse</code>: porcentaje de individuos que utilizan Internet.</p>
+<section id="apartado-a" class="level3">
+<h3 class="anchored" data-anchor-id="apartado-a">Apartado a</h3>
+<p>Realizad un análisis exploratorio de los datos, acompañado de un resumen de las observaciones más relevantes en relación con el contexto del problema, para ello crea una variable <code>region</code> con los siguientes niveles:</p>
+<ul>
+<li><p>Europa Occidental” = c(“BE”, “FR”, “DE”, “AT”, “NL”, “LU”, “IE”),</p></li>
+<li><p>Europa del Sur” = c(“ES”, “IT”, “PT”, “EL”, “CY”, “MT”),</p></li>
+<li><p>“Europa del Este” = c(“CZ”, “BG”, “HU”, “PL”, “RO”, “SK”),</p></li>
+<li><p>“Países Nórdicos” = c(“DK”, “SE”, “FI”, “NO”),</p></li>
+<li><p>“Países Bálticos” = c(“EE”, “LV”, “LT”)</p></li>
+</ul>
+<p>Aseguraos de incluir, un análisis de la matriz de correlaciones.</p>
+</section>
+<section id="apartado-b" class="level3">
+<h3 class="anchored" data-anchor-id="apartado-b">Apartado b</h3>
+<p>Realizad una reducción del número de variables utilizando un Análisis de Componentes Principales (PCA). Justificad si trabajaréis con la matriz de covarianzas o la de correlaciones, considerando las características de los datos. Evaluad la idoneidad de la reducción propuesta, indicando claramente el criterio empleado para seleccionar el número de componentes principales a retener. Finalmente, interpretad las componentes principales seleccionadas, describiendo qué representan en el contexto de los datos y cómo contribuyen al análisis.</p>
+</section>
+</section>
+<section id="problema-2" class="level2">
+<h2 class="anchored" data-anchor-id="problema-2">Problema 2</h2>
+<p>Resolved el ejercicio propuesto como práctica en <a href="https://aprender-uib.github.io/AD/t4_trd.html#mds-no-m%C3%A9trico">la sección 4.10 de los apuntes</a>. Los datos necesarios para este ejercicio se encuentran en la carpeta de Aula Digital, con el nombre: “Datos para el ejercicio 2 de la práctica 6 (ACP y MDS)”, disponible en la sección “Práctica”.</p>
+</section>
+<section id="problema-3" class="level2">
+<h2 class="anchored" data-anchor-id="problema-3">Problema 3</h2>
+<p>Una empresa de comercio busca identificar segmentos de clientes según sus patrones de compra. Para ello, se dispone de un conjunto de datos ficticio denominado <a href="https://github.com/igmuib/Practica_AD/blob/main/data_comercio.csv">data_comercio.csv</a>. Este conjunto de datos incluye información sobre la identificación del cliente, la categoría de las compras realizadas, el importe gastado en euros, el número de artículos adquiridos y la fecha de la última compra. La tarea consiste en realizar una segmentación de clientes utilizando métodos de clustering de partición.</p>
+<p>Deberéis presentar visualizaciones de los agrupamientos obtenidos con cada método y comparar las diferencias entre ellos, destacando las ventajas y desventajas de cada enfoque. Además, se espera un análisis de las características principales de cada clúster, identificando, por ejemplo, a los clientes con mayor gasto promedio, el número promedio de artículos comprados por grupo y otras características relevantes. Finalmente, con base en los segmentos identificados, se deben proponer recomendaciones estratégicas para diseñar campañas de marketing dirigidas específicamente a cada segmento.</p>
+</section>
+<section id="problema-4" class="level2">
+<h2 class="anchored" data-anchor-id="problema-4">Problema 4</h2>
+<p>Una empresa de comercio busca identificar segmentos de clientes según sus patrones de compra. Para ello, se dispone de un conjunto de datos ficticio denominado <a href="https://github.com/igmuib/Practica_AD/blob/main/data_comercio.csv">data_comercio.csv</a>. Este conjunto de datos incluye información sobre la identificación del cliente, la categoría de las compras realizadas, el importe gastado en euros, el número de artículos adquiridos y la fecha de la última compra. La tarea consiste en realizar una segmentación de clientes utilizando métodos de clustering jerárquicos con diferentes enlaces y distancias.</p>
+<p>Deberéis presentar visualizaciones de los agrupamientos obtenidos con cada método y comparar las diferencias entre ellos, destacando las ventajas y desventajas de cada enfoque. Además, se espera un análisis de las características principales de cada clúster, identificando, por ejemplo, a los clientes con mayor gasto promedio, el número promedio de artículos comprados por grupo y otras características relevantes. Finalmente, con base en los segmentos identificados, se deben proponer recomendaciones estratégicas para diseñar campañas de marketing dirigidas específicamente a cada segmento.</p>
+</section>
+<section id="problema-5" class="level2">
+<h2 class="anchored" data-anchor-id="problema-5">Problema 5</h2>
+<p>La tabla de <a href="https://github.com/igmuib/Practica_AD/blob/main/datos_antropometricos.csv">datos_antropométricos</a> presenta un conjunto de datos simulados que recopila información sobre 200 observaciones de hombres y mujeres. Este conjunto incluye las siguientes variables:</p>
+<ul>
+<li><code>altura</code>: Altura en centímetros</li>
+<li><code>peso</code>: Peso en kilogramos</li>
+<li><code>cintura</code>: Circunferencia de la cintura en centímetros</li>
+<li><code>cadera</code>: Circunferencia de la cadera en centímetros</li>
+<li><code>IMC</code>: Índice de Masa Corporal (IMC)</li>
+<li><code>grasa_corporal</code>: Porcentaje de grasa corporal</li>
+</ul>
+<p>Presentad un análisis exploratorio de los datos junto con un resumen de lo observado en el contexto del problema. Aplicad técnicas de clustering para agrupar individuos que tengan formas de cuerpos semejantes. Escribid una conclusión del análisis realizado en el contexto del problema</p>
+</section>
+<section id="problema-6" class="level2">
+<h2 class="anchored" data-anchor-id="problema-6">Problema 6</h2>
+<p>La serie temporal <a href="https://github.com/igmuib/Practica_AD/blob/main/ts_1.csv">ts_1</a> corresponde a las ventas (en miles de unidades) de un producto en una empresa durante varios trimestres consecutivos. La empresa busca desarrollar un modelo de pronóstico para predecir las ventas futuras del producto. Para ello, dividid la serie temporal en dos trozos: un 80% de las primeras observaciones las usaréis para “aprender” y dejaréis el 20% restante para evaluar la capacidad predictiva del modelo.</p>
+<p>6.1 Describid la serie temporal de aprendizaje: gráfico de la serie original, detección de la tendencia, análisis de la variabilidad y estacionalidad (en el caso que aplique).</p>
+<p>6.2 Analizad los gráficos ACF y PACF. Descomponed de la serie de acuerdo a un modelo aditivo y uno multiplicativo, seleccionad el mejor. Por último, realizar predicciones con el modelo aditivo o multiplicativo que habéis seleccionado, dibujad vuestros pronósticos sobre la serie total (aprendizaje + test). Calculad el error cuadrático medio de las predicciones. Comentad el resultado en el contexto del problema.</p>
+</section>
+<section id="problema-7" class="level2">
+<h2 class="anchored" data-anchor-id="problema-7">Problema 7</h2>
+<p>Un equipo médico está estudiando los patrones de presión arterial promedio en un grupo de pacientes para evaluar posibles tendencias en su comportamiento a lo largo del tiempo. Para ello, se han tomado mediciones de la presión arterial diaria durante un periodo de 100 días que podréis encontrar en <a href="https://github.com/igmuib/Practica_AD/blob/main/ts_2.txt">ts_2</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name<span class="ot">=</span> <span class="fu">read.table</span>(<span class="st">"ts_2.txt"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ts <span class="ot">=</span> <span class="fu">ts</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Como la serie es de 100 observaciones, el 80% de estas equivaldrá a las 80 primeras. De este modo, la serie que utilizaremos para aprender va a ser la de estas primeras 80 observaciones.</p>
+<section id="dividid-la-serie-temporal-en-dos-trozos-un-80-de-las-primeras-observaciones-las-usaréis-para-aprender-y-dejaréis-el-20-restante-para-predecir." class="level3">
+<h3 class="anchored" data-anchor-id="dividid-la-serie-temporal-en-dos-trozos-un-80-de-las-primeras-observaciones-las-usaréis-para-aprender-y-dejaréis-el-20-restante-para-predecir.">7.1 Dividid la serie temporal en dos trozos: un 80% de las primeras observaciones las usaréis para “aprender” y dejaréis el 20% restante para “predecir”.</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>aprender<span class="ot">=</span>ts[<span class="dv">1</span><span class="sc">:</span><span class="dv">80</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>predecir<span class="ot">=</span>ts[<span class="dv">81</span><span class="sc">:</span><span class="dv">100</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="describid-la-serie-temporal-de-aprendizaje-gráfico-de-la-serie-original-detección-de-la-tendencia-análisis-de-la-variabilidad-y-estacionalidad-en-el-caso-que-aplique." class="level3">
+<h3 class="anchored" data-anchor-id="describid-la-serie-temporal-de-aprendizaje-gráfico-de-la-serie-original-detección-de-la-tendencia-análisis-de-la-variabilidad-y-estacionalidad-en-el-caso-que-aplique.">7.2 Describid la serie temporal de aprendizaje: gráfico de la serie original, detección de la tendencia, análisis de la variabilidad y estacionalidad (en el caso que aplique).</h3>
+<p>Empezaremos graficando la serie orignial para identificar vagamente si esta presenta o no algun tipo de tendencia. Además, podemos utilizar también la regresión lineal para cuantificar esta tendencia:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(aprender)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>tend <span class="ot">=</span> <span class="fu">lm</span>(aprender<span class="sc">~</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">80</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">reg=</span>tend, <span class="at">col=</span><span class="st">'red'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Visto el gráfico, es fácil identificar que la serie presenta una tendencia lineal positiva; el coeficiente 0,5 calculado en la regresión nos confirma que existe y nos la cuantifica. Por lo tanto, procederemos a quitarla mediante el método de la diferenciación.</p>
+<p>Veamos el gráfico de la serie estacionada:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>adif<span class="ot">=</span><span class="fu">diff</span>(aprender)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(adif)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Analizando el gráfico, podemos concluir que la serie será homocedástica; ya que la variabilidad no cambia demasiado. Además, podemos decir que la serie temporal no tiene ciclos estacionales. Por lo que, mediante las transformaciones hechas anteriormente, esta serie homocedástica sin tendencia, es consecuentemente estacionaria</p>
+</section>
+<section id="ajustad-un-modelo-arima-a-la-serie-temporal-para-aprender-justificad-detalladamente-la-selección-de-los-parámetros-del-modelo.-visualizad-el-ajuste-del-modelo." class="level3">
+<h3 class="anchored" data-anchor-id="ajustad-un-modelo-arima-a-la-serie-temporal-para-aprender-justificad-detalladamente-la-selección-de-los-parámetros-del-modelo.-visualizad-el-ajuste-del-modelo.">7.3 Ajustad un modelo ARIMA a la serie temporal para “aprender”, justificad detalladamente la selección de los parámetros del modelo. Visualizad el ajuste del modelo.</h3>
+<p>Empecemos el proceso del arima por observar la función de correlación simple y parcial de la serie:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(adif)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(adif)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A contniuación, analizaremos los dos gráficos para plantear un modelo de predicción u otro.</p>
+<ul>
+<li><p>ARIMA(2,1,0): Una de las observaciones que podemos identificar es que la función de correlacion parcial presenta dos barras significativas antes de entrar en la banda. Por lo tanto, una de las primeras propuestas que podemos hacer es un ARIMA(2,1,0) (ya que ya hemos diferenciado una vez la serie).</p></li>
+<li><p>ARIMA(0,1,1): Observando la función de correlación simple, podemos ver que solo presenta una barra significativa fuera de la banda (el gráfico presenta también la barra de tiempo 0, que siempre es 1 y se debe obviar), antes de entrar en ella. En este caso, este fenómeno se corresponde con un modelo de media móvil de orden 1; es decir, un ARIMA(0,1,1).</p></li>
+<li><p>ARIMA(2,1,1): Finalmente, podemos plantear el método mixto para comprobar si éste mejora o no la predicción.</p></li>
+</ul>
+<p>Ahora, plantearemos los 3 modelos (de forma paralela) y procederemos a comprobar sus parámetros. Finalmente, podremos elegir el mejor escogiendo aquel cuyo criterio de información de Akaike (AIC) sea menor.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>modelo1 <span class="ot">=</span> <span class="fu">arima</span>(aprender, <span class="at">order=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">0</span>))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>modelo2 <span class="ot">=</span> <span class="fu">arima</span>(aprender, <span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>modelo3 <span class="ot">=</span> <span class="fu">arima</span>(aprender, <span class="at">order=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(modelo1);<span class="fu">print</span>(modelo2);<span class="fu">print</span>(modelo3);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+arima(x = aprender, order = c(2, 1, 0))
+
+Coefficients:
+          ar1     ar2
+      -0.5756  -0.248
+s.e.   0.1094   0.109
+
+sigma^2 estimated as 5.561:  log likelihood = -180.05,  aic = 366.11</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+arima(x = aprender, order = c(0, 1, 1))
+
+Coefficients:
+          ma1
+      -0.4947
+s.e.   0.0773
+
+sigma^2 estimated as 5.706:  log likelihood = -181.03,  aic = 366.05</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+arima(x = aprender, order = c(2, 1, 1))
+
+Coefficients:
+          ar1      ar2      ma1
+      -0.4872  -0.2070  -0.0942
+s.e.   0.5812   0.2934   0.6028
+
+sigma^2 estimated as 5.56:  log likelihood = -180.04,  aic = 368.09</code></pre>
+</div>
+</div>
+<p>Con estos cálculos en mano, podemos concluir que el modelo2 es el que menor error va a provocar. Veámos en un grafico su ajuste:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(adif)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(modelo2<span class="sc">$</span>residuals, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>En el gráfico, podemos ver que parece ajustarse medianamente bien. Comprobemos el error de la aproximación mediante los residuos.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(modelo2,<span class="at">test =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>No esta claro si los errores de este modelo siguen una distribución normal. Veámoslo con una prueba inferencial de bondad de ajuste.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(modelo2<span class="sc">$</span>residuals)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  modelo2$residuals
+W = 0.98842, p-value = 0.6923</code></pre>
+</div>
+</div>
+<p>El test de Shapiro-Wilk no nos permite rechazar la normalidad de los errores.</p>
+</section>
+<section id="utilizad-el-modelo-del-apartado-anterior-para-realizar-predicciones-sobre-la-serie" class="level3">
+<h3 class="anchored" data-anchor-id="utilizad-el-modelo-del-apartado-anterior-para-realizar-predicciones-sobre-la-serie">7.4 Utilizad el modelo del apartado anterior para realizar predicciones sobre la serie</h3>
+<p>no utilizada para aprender. Dibujad vuestros pronósticos sobre la serie total (aprendizaje + test). Calculad el error cuadrático medio de las predicciones. Comentad el resultado.</p>
+<p>Con el modelo elegido anteriormente (modelo2), procederemos a modelar la serie entera para comprovar si predice bien la evolución a partir de la observación 80 (la parte de la serie que destinamos a predecir)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>forecast1<span class="ot">=</span><span class="fu">predict</span>(modelo2, <span class="dv">20</span>)<span class="sc">$</span>pred</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>forecast1_se<span class="ot">=</span><span class="fu">predict</span>(modelo2, <span class="dv">20</span>)<span class="sc">$</span>se</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1 <span class="sc">-</span> <span class="dv">2</span><span class="sc">*</span>forecast1_se, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"green"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1 <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>forecast1_se, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"green"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A continuación, comprobaremos la precisión de la predicción mediante la función accuracy.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">accuracy</span>(forecast1,predecir)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>               ME     RMSE      MAE      MPE     MAPE
+Test set 7.721288 8.261332 7.721288 4.643629 4.643629</code></pre>
+</div>
+</div>
+<p>Entonces, podemos concluir que nuestra predicción tiene un error medio cuadrático de 8,26.</p>
+<p>Comentando el gráfico, puede parecer extraño. El resultado de la función predict, es literalmente constante (con valor 157,4807). No entendemos como funciona por dentro esta función y, por tanto, no podemos encontrar nuestro error; pero esto lo comentaremos en el último apartado. Observando el gráfico entonces, nuestra modelo predice que, a partir de la observación 80, la presión sanguínea debería permanecer constante.</p>
+</section>
+<section id="escribid-una-conclusión-general-de-vuestro-análisis-tanto-a-nivel-técnico-como-en" class="level3">
+<h3 class="anchored" data-anchor-id="escribid-una-conclusión-general-de-vuestro-análisis-tanto-a-nivel-técnico-como-en">7.5 Escribid una conclusión general de vuestro análisis tanto a nivel técnico como en</h3>
+<p>el contexto del problema. Comentad los aspectos a mejorar.</p>
+<p>A nivel técnico, nos parece muy extraño que la predicción sea constante después de haber seguido los pasos usuales. Por esta razón, hemos querido comprovar si nuestro modelo de predicción ARIMA(0,1,1) era realmente el óptimo y nos hemos ayudado de la función<br>
+<em>auto.arima()</em> para evaluar cuales serían los mejores parámetros para el método ARIMA.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">auto.arima</span>(aprender)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Series: aprender 
+ARIMA(4,1,0) with drift 
+
+Coefficients:
+          ar1      ar2      ar3      ar4   drift
+      -0.8357  -0.6745  -0.4651  -0.3664  0.4747
+s.e.   0.1066   0.1329   0.1321   0.1056  0.0684
+
+sigma^2 = 4.234:  log likelihood = -167.15
+AIC=346.3   AICc=347.46   BIC=360.51</code></pre>
+</div>
+</div>
+<p>Aunque en el análisis de las funciones de correlación, no nos indicara que fuera este, la mejor combinación de parámetros que nos ha dado la función de R es la de un ARIMA(4,1,0). De este modo, hemos hecho este modelo y hemos visualizado su gráfico:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>modeloA <span class="ot">=</span> <span class="fu">arima</span>(aprender, <span class="at">order=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">0</span>))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>forecast1<span class="ot">=</span><span class="fu">predict</span>(modeloA, <span class="dv">20</span>)<span class="sc">$</span>pred</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>forecast1_se<span class="ot">=</span><span class="fu">predict</span>(modeloA, <span class="dv">20</span>)<span class="sc">$</span>se</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1 <span class="sc">-</span> <span class="dv">2</span><span class="sc">*</span>forecast1_se, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"green"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(forecast1 <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>forecast1_se, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"green"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>En este modelo, podemos ver como también nos sale una predicción constante similar a la nuestra. Cosa que nos señala que nuestra predicción puede que sea buena dentro de lo que nos permite predecir el método ARIMA.</p>
+<section id="drift" class="level4">
+<h4 class="anchored" data-anchor-id="drift">Drift</h4>
+<p>Pese a que el método pueda parecer fallido, hemos encontrado que existe el parámetro <em>include.drift</em> dentro de la función <em>arima()</em>. El término drift es exactamente lo que nosotros llamamos tendencia de la serie, por lo que la función ARIMA necesita saber si la serie que queremos predecir tiene o no esta tendencia. Dada esta información, hemos analizado nuestro modelo ARIMA(0,1,1) incluyendo tal parámetro. El resultado, bastante más razonable, es el siguiente:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>modeloA <span class="ot">=</span> <span class="fu">Arima</span>(aprender, <span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>),<span class="at">include.drift=</span><span class="cn">TRUE</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>forecast1<span class="ot">=</span><span class="fu">forecast</span>(modeloA, <span class="dv">20</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(forecast1)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(ts, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practica7_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Es decir que la tensión arterial, en las siguientes muestras, debería subir al mismo ritmo. Las observaciones que tenemos en la <em>ts</em> de predicción, nos indican que es el comportamiento adecuado.</p>
+</section>
+</section>
+</section>
+<section id="problema-8" class="level2">
+<h2 class="anchored" data-anchor-id="problema-8">Problema 8</h2>
+<p>Entrad a la página de <a href="https://ibestat.es/estadistica/economia/turismo/flujo-de-turistas-frontur/">IBESTAT</a> y descargad los datos de la evolución de los turistas con destino principal las Illes Ballears. Analizad esta serie temporal, tomando en cuenta los siguientes puntos:</p>
+<p>8.1 Dividid la serie temporal en dos trozos: un 80% de las primeras observaciones las usaréis para “aprender” y dejaréis el 20% restante para “predecir”.</p>
+<p>8.2 Describid la serie temporal de aprendizaje: gráfico de la serie original, detección de la tendencia, análisis de la variabilidad y estacionalidad (en el caso que aplique).</p>
+<p>8.3 Ajustad un modelo SARIMA a la serie temporal para “aprender”, justificad detalladamente la selección de los parámetros del modelo. Visualizad el ajuste del modelo.</p>
+<p>8.4 Utilizad el modelo del apartado anterior para realizar predicciones sobre la serie no utilizada para aprender. Dibujad vuestros pronósticos sobre la serie total (aprendizaje + test). Calculad el error cuadrático medio de las predicciones. Comentad el resultado.</p>
+<p>8.5 Escribid una conclusión general de vuestro análisis tanto a nivel técnico como en el contexto del problema. Comentad los aspectos a mejorar.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
